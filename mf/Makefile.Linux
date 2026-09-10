@@ -18,8 +18,8 @@ CFLAGS = -O2 -Wall
 
 include common.mf
 
-# Set to APPDEFS_CORE for core fonts
-APPDEFS = $(APPDEFS_XFT)
+# Use classic X11 core fonts. Xft/anti-aliased font resources are not used.
+APPDEFS = $(APPDEFS_CORE)
 
 install: common_install
 
