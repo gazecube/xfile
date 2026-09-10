@@ -22,10 +22,8 @@ xfile: icons.h $(XFILE_OBJS)
 icons.h: mkicons.sh icons/*.xpm
 	$(SHELL) mkicons.sh $@
 
-# App-defaults, core and xft fonts variety, APPDEFS must be set 
-# to one of these in platform specific makefiles 
+# App-defaults use classic X11 core fonts.
 APPDEFS_CORE = res/prefs.ad res/fonts.ad res/accels.ad res/misc.ad
-APPDEFS_XFT = res/prefs.ad res/fonts-xft.ad res/accels.ad res/misc.ad
 xfile.ad: $(APPDEFS_CORE)
 	cat $(APPDEFS) > xfile.ad
 
