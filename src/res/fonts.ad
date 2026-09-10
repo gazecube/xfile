@@ -1,21 +1,26 @@
 !-----------------------------------------------------------------------------
-! Renditions for file name labels
+! SGI Screen core-font renditions
 !-----------------------------------------------------------------------------
+! Keep XFile in the classic X11 bitmap-font world.  The 12px SGI Screen
+! strike is intentionally used as the baseline because it is substantially
+! chunkier and easier to read than the same nominal size in Helvetica.
+
+*fontList: -sgi-screen-medium-r-normal--12-120-72-72-m-70-iso8859-1
+
 *FileList.renderTable: regular directory symlink special
 
 ! Directories
 *FileList.renderTable.directory.fontType: FONT_IS_FONT
-*FileList.renderTable.directory.fontName: -*-helvetica-medium-r-*-*-16-*-*-*-*-*-*-*
+*FileList.renderTable.directory.fontName: -sgi-screen-medium-r-normal--12-120-72-72-m-70-iso8859-1
 
 ! Regular files
 *FileList.renderTable.regular.fontType: FONT_IS_FONT
-*FileList.renderTable.regular.fontName: -*-helvetica-medium-r-*-*-16-*-*-*-*-*-*-*
+*FileList.renderTable.regular.fontName: -sgi-screen-medium-r-normal--12-120-72-72-m-70-iso8859-1
 
 ! Symbolic links
 *FileList.renderTable.symlink.fontType: FONT_IS_FONT
-*FileList.renderTable.symlink.fontName: -*-helvetica-medium-o-*-*-16-*-*-*-*-*-*-*
+*FileList.renderTable.symlink.fontName: -sgi-screen-medium-r-normal--12-120-72-72-m-70-iso8859-1
 
 ! Special files
 *FileList.renderTable.special.fontType: FONT_IS_FONT
-*FileList.renderTable.special.fontName: -*-helvetica-bold-r-*-*-16-*-*-*-*-*-*-*
-
+*FileList.renderTable.special.fontName: -sgi-screen-medium-r-normal--12-120-72-72-m-70-iso8859-1
